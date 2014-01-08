@@ -1,0 +1,25 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.ser",
+				"*.sublime-workspace",
+				"*.log"
+			],
+			"folder_exclude_patterns":
+			[
+				".settings",
+				"target"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"tab_size": 4,
+		"translate_spaces_to_tabs": true
+	}
+}

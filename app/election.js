@@ -1,0 +1,1 @@
+angular.module('election-app', ['services','controllers']);
