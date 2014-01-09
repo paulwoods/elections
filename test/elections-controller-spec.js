@@ -34,6 +34,4 @@ describe('ElectionsCtrl', function() {
 		expect($scope.sum()).toEqual(150);
 	});
 
-	
-
 });

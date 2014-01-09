@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"exp",
+				"expectequal	jasmine expect().toEqual();"
+			],
+			[
 				"get",
 				"getManualFeedback"
 			],
@@ -283,6 +287,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3865,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers.js",
+			"settings":
+			{
+				"buffer_size": 546,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test/candidate-controller-spec.js",
+			"settings":
+			{
+				"buffer_size": 657,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/election.js",
+			"settings":
+			{
+				"buffer_size": 74,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -427,6 +463,24 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Paul/Documents/ally/ally.txt",
+		"/C/Projects/election/app/services.js",
+		"/C/Projects/election/test/factory-spec.js",
+		"/C/Projects/election/test/candidate-controller-spec.js",
+		"/C/Projects/election/app/election.js",
+		"/C/Projects/election/app/controllers.js",
+		"/C/Projects/election/test/elections-controller-spec.js",
+		"/C/Projects/election/app/candidate-controller.js",
+		"/C/Projects/election/karma.conf.js",
+		"/C/Projects/election/app/services/election.js",
+		"/C/Projects/election/app/controllers/election.js",
+		"/C/Projects/election/app/controllers/candidate.js",
+		"/C/Projects/election/bower.json",
+		"/C/Projects/election/test/elections-spec.js",
+		"/C/Projects/election/test/candidatectrl-spec.js",
+		"/C/Projects/election/index.html",
+		"/C/Projects/election/test/services",
+		"/C/Projects/election/election.sublime-project",
 		"/C/Projects/samples/grails-app/domain/com/ti/specteam/samples/task/Task.groovy",
 		"/C/Projects/samples/testfunc.bat",
 		"/C/Projects/samples/grails-app/services/com/ti/specteam/samples/DeviceCategoryService.groovy",
@@ -536,29 +590,11 @@
 		"/C/Projects/samples/tools/samples/approvetasks.groovy",
 		"/C/Projects/samples/tools/samples/prepim.groovy",
 		"/C/Projects/samples/tools/samples/samples.groovy",
-		"/C/Projects/samples/tools/samples/approvetasks.bat",
-		"/C/Projects/samples/tools/samples/fix.groovy",
-		"/C/Projects/samples/src/groovy/com/ti/specteam/samples/SampleRefresher.groovy",
-		"/C/Projects/samples/tools/samples/prepim.bat",
-		"/C/Projects/samples/tools/samples/samples.bat",
-		"/C/Projects/samples/tools/samples/sample.bat",
-		"/C/Projects/samples/test/unit/com/ti/specteam/samples/SampleApproveServiceSpec.groovy",
-		"/C/Projects/samples/src/groovy/com/ti/specteam/samples/approval/RespondWindowNode.groovy",
-		"/C/Projects/samples/src/groovy/com/ti/specteam/samples/task/TaskTypes.groovy",
-		"/C/Users/Paul/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/Paul/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Projects/samples/grails-app/services/com/ti/specteam/samples/SearchService.groovy",
-		"/C/Projects/samples/grails-app/domain/com/ti/specteam/samples/WWCustomer.groovy",
-		"/C/Projects/samples/tools/common/WWCustomerUtils.groovy",
-		"/C/Projects/samples/grails-app/migrations/add_wwid_to_wwcustomer.groovy",
-		"/C/Projects/samples/.idea/workspace.xml",
-		"/C/Projects/samples/grails-app/views/customer/category.gsp",
-		"/C/Projects/samples/grails-app/migrations/changed_approved_to_notnull.groovy",
-		"/C/Projects/samples/grails-app/views/admin/deviceimport.gsp"
+		"/C/Projects/samples/tools/samples/approvetasks.bat"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 46.0
 	},
 	"find_in_files":
 	{
@@ -660,6 +696,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"watchCollection",
+			"		\n",
+			"min.",
+			"factory",
+			"\"",
+			"	\n",
 			"tasks",
 			"			\n",
 			"null",
@@ -781,13 +823,7 @@
 			"nullable:false, blank:false, ",
 			"blank",
 			"2.32.0",
-			"tomcat",
-			"pcnUrlUpdater",
-			"PcnUrlUpdater",
-			"pcnUrlUpdater",
-			"PcnUrlUpdater",
-			"pcnUrlUpdater",
-			"\n		"
+			"tomcat"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -933,8 +969,124 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3228,
+								3241
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2295.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 546,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								150,
+								150
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test/candidate-controller-spec.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/election.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 74,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								41
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],

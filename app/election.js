@@ -1,1 +1,1 @@
-angular.module('election-app', ['services','controllers']);
+angular.module('election-app', ['services','controllers','ui.bootstrap']);

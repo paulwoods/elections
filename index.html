@@ -1,41 +1,127 @@
-<html>
+<!doctype html>
+<html lang="en" ng-app="election-app">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Elections</title>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
-	<script src="bower_components/angular/angular.min.js"></script>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
 	<script src="app/election.js"></script>
 	<script src="app/services.js"></script>
 	<script src="app/controllers.js"></script>
+	
+	<style>
+	.nav, .pagination, .carousel a { cursor: pointer; }
+	body { padding-top: 70px; }
+	body { padding-bottom: 70px; }
+	</style>
+
 </head>
 <body>
 
-	<div ng-app="election-app">
-		<h1>Elections</h1>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Brand</a>
+		</div>
 
-		<table class="table" ng-controller="ElectionsCtrl">
-		<caption>There are a total of {{ sum() }} votes cast.</caption>
-		<thead>
-		<tr>
-			<th>Name</th>
-			<th>Votes</th>
-			<th>&nbsp;</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr ng-repeat="candidate in candidates" ng-controller="CandidateCtrl" ng-model="candidate">
-			<td>{{candidate.name}}</td>
-			<td>{{candidate.votes}}</td>
-			<td>
-				<button class="btn btn-primary" ng-click="up(candidate)">Up</button>
-				<button class="btn btn-primary" ng-click="down(candidate)">Down</button>
-			</td>
-		</tr>
-		</tbody>
-		</table>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+						<li class="divider"></li>
+						<li><a href="#">One more separated link</a></li>
+					</ul>
+				</li>
+			</ul>
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input type="search" class="form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Link</a></li>
+				
 
-	</div>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</li>
 
 
+
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<h1>Elections</h1>
+
+				<table class="table table-striped table-bordered table-hover" ng-controller="ElectionsCtrl">
+				<caption>There are a total of {{ sum() }} votes cast.</caption>
+				<thead>
+				<tr>
+					<th>Name</th>
+					<th>Votes</th>
+					<th>&nbsp;</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr ng-repeat="candidate in candidates" ng-controller="CandidateCtrl" ng-model="candidate">
+					<td>{{candidate.name}}</td>
+					<td>{{candidate.votes}}</td>
+					<td>
+						<button class="btn btn-primary" ng-click="up()">
+							<span class="glyphicon glyphicon-thumbs-up"></span>
+						</button>
+
+						<button class="btn btn-primary" ng-click="down()">
+							<span class="glyphicon glyphicon-thumbs-down"></span>
+						</button>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+
+			</div>
+
+		</div>
+
+	<nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse" role="navigation">
+	<button class="btn btn-primary">Hi</button>
+	</nav>
 </body>
+
+</div>
+
 </html>
